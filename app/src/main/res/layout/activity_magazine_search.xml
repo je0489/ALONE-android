@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.jieun.asw_aloneapp.MagazineDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/actionbar"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView3"
+        android:id="@+id/haveHashTagLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag1"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag2"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag3"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag4"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:cacheColorHint="#000"
+        android:divider="#00000000"
+        android:layout_gravity="bottom"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/haveHashTagLayout" />
+
+</RelativeLayout>

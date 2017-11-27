@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seok.alone">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".MyApplication"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".missionProcessing"/>
+        <activity android:name=".missionShowing"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MagazineDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MagazineSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".FirstActivity"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"/>
+    </application>
+
+</manifest>

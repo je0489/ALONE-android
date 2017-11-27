@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.jieun.asw_aloneapp.MagazineDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/actionbar"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/haveHashTagLayout"
+        android:weightSum="1">
+
+        <ImageView
+                android:id="@+id/MainPicture"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/MainTitle"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:cropToPadding="false"
+                android:focusable="false"
+                android:scaleType="centerInside" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_weight="3.22"
+            android:fillViewport="false">
+
+            <TextView
+                android:id="@+id/MainPictureDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="메인 사진 부연설명xgxfgfggfxxdfxdfzfszfszfdddxhfchgfjvjgkygy"
+                android:layout_margin="10dp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#FFe6a6"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/ImageReference1"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/profilepicture"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="-17dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/ImageReference2"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/profilepicture"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="-17dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/ImageReference3"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/profilepicture"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="-17dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="추천글"
+        android:id="@+id/textView3"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView3"
+        android:id="@+id/haveHashTagLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag1"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag2"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Large Text"
+            android:id="@+id/mainDetailHashTag3"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:background="#fff4e1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

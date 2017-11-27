@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/SearchPicture"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/MainTitle"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:cropToPadding="false"
+            android:focusable="false"
+            android:scaleType="centerInside" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_weight="3.22"
+            android:fillViewport="false"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/SearchPictureDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="메인 사진 부연설명xgxfgfggfxxdfxdfzfszfszfdddxhfchgfjvjgkygy"
+                android:layout_margin="10dp" />
+
+        </ScrollView>
+
+</LinearLayout>
